@@ -12,3 +12,9 @@ The order of the files is:
 9. Switch_Statement.html and Switch_Statement.js
 10. Functions.html and Functions.js
 11. Getting_User_Input.hml and Getting_User_Input.js
+12. String_Object.html
+13. Alert_Box.html
+14. Confirm_Box.html
+15. Prompt_Box.html
+16. Date_Object.html
+17. Date_Difference.html
