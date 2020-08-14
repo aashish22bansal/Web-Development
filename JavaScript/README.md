@@ -10,3 +10,5 @@ The order of the files is:
 7. Math_&_Numbers.html and Math_&_Numbers.js
 8. Conditional_Statement.html and Conditional_Statmen.js
 9. Switch_Statement.html and Switch_Statement.js
+10. Functions.html and Functions.js
+11. Getting_User_Input.hml and Getting_User_Input.js
