@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>Difference Between two Dates</title>
+    </head>
+    <body>
+        <script type="text/JavaScript">
+            var dateFirst = new Date("11/25/2019");
+            var dateSecond = new Date("11/28/2020");
+            //time difference
+            var timeDiff = Math.abs(dateSecond.getTime() - dateFirst.getTime());
+            // days difference
+            var diffDays = Math.ceil(timeDiff/(1000*3600*24));
+            // difference
+            alert(diffDays);
+        </script>
+    </body>
+</html>
