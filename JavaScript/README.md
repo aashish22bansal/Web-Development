@@ -18,3 +18,7 @@ The order of the files is:
 15. Prompt_Box.html
 16. Date_Object.html
 17. Date_Difference.html
+18. For_Loop.html
+19. While_Loop.html
+20. Break.html
+21. Continue.html
