@@ -1,0 +1,40 @@
+#para1
+{
+    text-decoration: overline;
+}
+#para2
+{
+    text-decoration: line-through;
+}
+#para3
+{
+    text-decoration: underline;
+}
+#para4
+{
+    text-decoration: blink;
+}
+#para5
+{
+    text-transform: uppercase;
+}
+#para6
+{
+    text-indent: 50px;
+}
+#para7
+{
+    word-spacing: 10px;
+}
+#para8
+{
+    letter-spacing: 3px;
+}
+p{
+    font-family: "Times New Roman";
+    font-style: normal;
+    font-size: 14px;
+    color: red;
+    font-weight: 100;
+    font-variant: small-caps;
+}

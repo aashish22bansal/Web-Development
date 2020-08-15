@@ -1,0 +1,25 @@
+body
+{
+    background-image: url('tree.jpg');
+    background-size: 1400px 700px;
+    background-repeat: repeat;
+    background-attachment: scroll;
+}
+p
+{
+    background-color: #e0ffff;
+    background-repeat: repeat-y;
+    background-position: 20px 10px;
+}
+div
+{
+    background-color: red;
+    background-repeat: repeat-x;
+    background-position: 30% 30%;
+}
+h4
+{
+    background-color:rgb(149,206,145);
+    background-repeat: no-repeat;
+    background-position: top center;
+}
