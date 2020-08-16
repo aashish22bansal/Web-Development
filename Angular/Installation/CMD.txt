@@ -1,0 +1,112 @@
+Microsoft Windows [Version 10.0.18362.778]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+C:\Users\pukes>node
+Welcome to Node.js v12.16.0.
+Type ".help" for more information.
+> var x=5;
+undefined
+> x
+5
+> .exit
+
+C:\Users\pukes>npm install -g @angular/cli
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supported
+C:\Users\pukes\AppData\Roaming\npm\ng -> C:\Users\pukes\AppData\Roaming\npm\node_modules\@angular\cli\bin\ng
+
+> @angular/cli@10.0.6 postinstall C:\Users\pukes\AppData\Roaming\npm\node_modules\@angular\cli
+> node ./bin/postinstall/script.js
+
+? Would you like to share anonymous usage data with the Angular Team at Google under
+Google’s Privacy Policy at https://policies.google.com/privacy? For more details and
+how to change this setting, see http://angular.io/analytics. Yes
+
+Thank you for sharing anonymous usage data. If you change your mind, the following
+command will disable this feature entirely:
+
+    ng analytics off
+
++ @angular/cli@10.0.6
+added 280 packages from 206 contributors in 266.728s
+
+C:\Users\pukes>cd C:\xampp\htdocs\Web-Development\Angular
+
+C:\xampp\htdocs\Web-Development\Angular>ng new First-App
+? Would you like to add Angular routing? No
+? Which stylesheet format would you like to use? CSS
+CREATE First-App/angular.json (3590 bytes)
+CREATE First-App/package.json (1252 bytes)
+CREATE First-App/README.md (1026 bytes)
+CREATE First-App/tsconfig.base.json (458 bytes)
+CREATE First-App/tsconfig.json (426 bytes)
+CREATE First-App/tslint.json (3184 bytes)
+CREATE First-App/.editorconfig (274 bytes)
+CREATE First-App/.gitignore (631 bytes)
+CREATE First-App/.browserslistrc (853 bytes)
+CREATE First-App/karma.conf.js (1021 bytes)
+CREATE First-App/tsconfig.app.json (292 bytes)
+CREATE First-App/tsconfig.spec.json (338 bytes)
+CREATE First-App/src/favicon.ico (948 bytes)
+CREATE First-App/src/index.html (294 bytes)
+CREATE First-App/src/main.ts (372 bytes)
+CREATE First-App/src/polyfills.ts (2835 bytes)
+CREATE First-App/src/styles.css (80 bytes)
+CREATE First-App/src/test.ts (753 bytes)
+CREATE First-App/src/assets/.gitkeep (0 bytes)
+CREATE First-App/src/environments/environment.prod.ts (51 bytes)
+CREATE First-App/src/environments/environment.ts (662 bytes)
+CREATE First-App/src/app/app.module.ts (314 bytes)
+CREATE First-App/src/app/app.component.html (25725 bytes)
+CREATE First-App/src/app/app.component.spec.ts (951 bytes)
+CREATE First-App/src/app/app.component.ts (213 bytes)
+CREATE First-App/src/app/app.component.css (0 bytes)
+CREATE First-App/e2e/protractor.conf.js (869 bytes)
+CREATE First-App/e2e/tsconfig.json (299 bytes)
+CREATE First-App/e2e/src/app.e2e-spec.ts (642 bytes)
+CREATE First-App/e2e/src/app.po.ts (301 bytes)
+√ Packages installed successfully.
+    Directory is already under version control. Skipping initialization of git.
+
+C:\xampp\htdocs\Web-Development\Angular>angular
+'angular' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\htdocs\Web-Development\Angular>angular -v
+'angular' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\xampp\htdocs\Web-Development\Angular>ng --version
+
+     _                      _                 ____ _     ___
+    / \   _ __   __ _ _   _| | __ _ _ __     / ___| |   |_ _|
+   / △ \ | '_ \ / _` | | | | |/ _` | '__|   | |   | |    | |
+  / ___ \| | | | (_| | |_| | | (_| | |      | |___| |___ | |
+ /_/   \_\_| |_|\__, |\__,_|_|\__,_|_|       \____|_____|___|
+                |___/
+
+
+Angular CLI: 10.0.6
+Node: 12.16.0
+OS: win32 x64
+
+Angular:
+...
+Ivy Workspace:
+
+Package                      Version
+------------------------------------------------------
+@angular-devkit/architect    0.1000.6
+@angular-devkit/core         10.0.6
+@angular-devkit/schematics   10.0.6
+@schematics/angular          10.0.6
+@schematics/update           0.1000.6
+rxjs                         6.5.5
+
+
+C:\xampp\htdocs\Web-Development\Angular>ng update @angular/cli --migrate-only --from=10.0.6
+The "@angular-devkit/schematics" package cannot be resolved from the workspace root directory. This may be due to an unsupported node modules structure.
+Please remove both the "node_modules" directory and the package lock file; and then reinstall.
+If this does not correct the problem, please temporarily install the "@angular-devkit/schematics" package within the workspace. It can be removed once the update is complete.
+
+C:\xampp\htdocs\Web-Development\Angular>
