@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#p1").mouseenter(function(){
+                    alert("You entered p1!");
+                });
+            });
+            $(document).ready(function(){
+                $("p").on({
+                    mouseenter:function(){
+                        $(this).css("background-color","lightgray");
+                    },
+                    mouseleave:function(){
+                        $(this).css("background-color","#00FF00");
+                    },
+                    click:function(){
+                        $(this).css("background-color","yellow");
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <p id="p1">Enter this paragraph</p>
+        <p>Click or move the mouse pointer over this paragraph.<br>I am Aashish Bansal<br>SITE, VIT, Vellore</p>
+    </body>
+</html>

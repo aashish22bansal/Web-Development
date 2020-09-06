@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Effects - Fading</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("button1").click(function(){
+                    $("#div1").fadeIn();
+                    $("#div2").fadeIn("slow");
+                    $("#div3").fadeIn(3000);
+                });
+                $("button2").click(function(){
+                    $("#div4").fadeOut();
+                    $("#div5").fadeOut("slow");
+                    $("#div6").fadeOut(3000);
+                });
+                $("button3").click(function(){
+                    $("#div7").fadeToggle();
+                    $("#div8").fadeToggle("slow");
+                    $("#div9").fadeToggle(3000);
+                });
+                $("button4").click(function(){
+                    $("#div10").fadeTo("slow",0.15);
+                    $("#div11").fadeTo("slow",0.4);
+                    $("#div12").fadeTo("slow",0.7);
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div id="div1"><p>div1</p><button>Div 1</button></div>
+        <div id="div2"><p>div2</p><button>Div 2</button></div>
+        <div id="div3"><p>div3</p><button>Div 3</button></div>
+        <div id="div4"><p>div4</p><button>Div 4</button></div>
+        <div id="div5"><p>div5</p><button>Div 5</button></div>
+        <div id="div6"><p>div6</p><button>Div 6</button></div>
+        <div id="div7"><p>div7</p><button>Div 7</button></div>
+        <div id="div8"><p>div8</p><button>Div 8</button></div>
+        <div id="div9"><p>div9</p><button>Div 9</button></div>
+        <div id="div10"><p>div10</p><button>Div 10</button></div>
+        <div id="div11"><p>div11</p><button>Div 11</button></div>
+        <div id="div12"><p>div12</p><button>Div 12</button></div>
+    </body>
+</html>

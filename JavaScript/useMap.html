@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>useMap Example</title>
+    </head>
+    <body>
+        <img id="planets" src="planets.gif" width="145" height="126" useMap="#planetmap">
+        <map name="planetmap">
+            <area id="venus" shape="circle" coords="124,58,8" alt="The planet Venus" href="venus.html">
+            <area id="earth" shape="square" coords="0,0,100,100" alt="The planet Earth" href="earth.html">
+        </map>
+        <p>The value of the usemap attribute is:
+            <script type="text/javascript">
+                document.write(document.getElementById("planets").useMap);
+            </script>
+        </p>
+    </body>
+</html>

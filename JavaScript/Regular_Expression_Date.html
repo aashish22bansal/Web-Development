@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regular Expression</title>
+        <script type="text/javascript">
+            function validation(){
+                var v = document.forms["form1"]["t1"].value;
+                var pattern = /^\d{1,2}\/\w{3}\/(\d{2}|d{4})$/;
+                alert(pattern.test(v));
+            }
+        </script>
+    </head>
+    <body>
+        <form name="form1" onsubmit="validation()">
+            Enter the value: <input type="text" name="t1">
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
