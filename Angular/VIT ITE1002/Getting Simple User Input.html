@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AngularJS Controller</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body ng-app="myNgApp">
+		<div ng-controller="myController">
+			Enter Message: <input type="text" ng-model="message"/><br/>
+			<button ng-click="ShowMsg(message)">Show Message</button>
+		</div>
+		<script>
+			var ngApp = angular.module('myNgApp',[]);
+			ngApp.controller('myController',function($scope){
+				$scope.message = "Hello World!";
+				$scope.ShowMsg = function(msg){
+					alert(msg);
+				};
+			});
+		</script>
+	</body>
+</html>

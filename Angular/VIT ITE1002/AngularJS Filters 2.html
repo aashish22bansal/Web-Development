@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AngularJS Filters 2</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="datCtrl">
+			<p>Date: {{today | date}}</p>
+			<p>Date: {{today | date:"dd.MM.yyyy"}}</p>
+			<p>Date: {{today | date:"dd-MMM-yy"}}</p>
+			<p>Date: {{today | date:"fullDate"}}</p>
+			<p>Date: {{today | date:"'today is 'MMMM d, y"}}</p>
+		</div>
+		<script>
+			var app = angular.module('myApp',[]);
+			app.controller('datCtrl',function($scope){
+				$scope.today = new Date();
+			});
+		</script>
+		<p>The date filter formats a date object to a readable format.</p>
+	</body>
+</html>

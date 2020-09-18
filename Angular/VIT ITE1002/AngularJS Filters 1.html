@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AngularJS Filters 1</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
+	</head>
+	<body ng-app="myApp">
+		<div ng-controller="personCtrl">
+			<p>{{firstName | uppercase}}</p>
+		</div>
+		<script>
+			angular.module("myApp",[]).controller("personCtrl",function($scope){
+				$scope.firstName = "a";
+				$scope.lastName = "b";
+			});
+		</script>
+		<p>The date filter formats a date object to a readable format.</p>
+	</body>
+</html>
