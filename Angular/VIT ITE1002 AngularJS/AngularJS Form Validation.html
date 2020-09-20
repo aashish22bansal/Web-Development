@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AngularJS Events</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body ng-app="">
+		<p>Try writing in the input field: </p>
+		<form name="myForm">
+			<input name="myInput" ng-model="myIn" required>
+		</form>
+		<p>The input's valid state is: </p>
+		<h1>{{myForm.myInput.$valid}}</h1>
+		<p>The value of the input is:</p>
+		<h1>{{myIn}}</h1>
+	</body>
+</html>

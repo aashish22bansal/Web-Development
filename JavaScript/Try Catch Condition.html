@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Try Catch Condition</title>
+		<script>
+			var txt = "";
+			function message(){
+				try{
+					adddlert("Welcome Guest!");
+				}
+				catch(err){
+					txt = "There was an error on this page.\n\n";
+					txt += "Click OK to continue viewing the page.\n\n";
+					txt += "or Cancel to return to the home page.\n\n";
+					if(!confirm(txt)){
+						document.location.href="http://www.w3schools.com/";
+					}
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="View Message" onclick="message()"/>
+	</body>
+</html>

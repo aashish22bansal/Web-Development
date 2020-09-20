@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>AngularJS Events</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body ng-app="">
+		<form name="myForm">
+			<input name="myInput" ng-model="myIn" required>
+			<p>Email: <br>
+				<input type="email" name="email" ng-model="emailmodel" required>
+				<span style="color:red" ng-show="myForm.email.$invalid">
+					<span ng-show="myForm.email.$error.required">Email is required.</span>
+					<span ng-show="myForm.email.$error.email">Invalid Email Address.</span>
+				</span>
+				<span style="color:green" ng-show="myForm.email.$valid">{{emailmodel}}</span>
+			</p>
+			<input type="submit" ng-disabled="myForm.user.$invalid || myForm.email.$invalid">
+		</form>		
+	</body>
+</html>
