@@ -9,3 +9,7 @@ fs.readFile('text.txt',function(err,data){
 });
 
 console.log('Start Here.');
+/*
+Till the time the readFile function gets executed, the further statements are executed and when the readFile
+execution is complete, then the result will be displayed.
+*/
