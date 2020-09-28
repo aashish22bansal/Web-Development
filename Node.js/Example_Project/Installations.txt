@@ -1,0 +1,313 @@
+Your environment has been set up for using Node.js 12.18.4 (x64) and npm.
+
+C:\Users\aashi>cd C:\xampp\htdocs\Web-Development\Node.js
+
+C:\xampp\htdocs\Web-Development\Node.js>mkdir Example_Project
+
+C:\xampp\htdocs\Web-Development\Node.js>cd Example_Project
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (example_project) First_Project
+Sorry, name can no longer contain capital letters.
+package name: (example_project) first_project
+version: (1.0.0)
+description: this is my first project made using node js
+entry point: (index.js) app.js
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\xampp\htdocs\Web-Development\Node.js\Example_Project\package.json:
+
+{
+  "name": "first_project",
+  "version": "1.0.0",
+  "description": "this is my first project made using node js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) yes
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm install express --save
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN first_project@1.0.0 No repository field.
+
++ express@4.17.1
+added 50 packages from 37 contributors and audited 50 packages in 11.262s
+found 0 vulnerabilities
+
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm install jade --save
+npm WARN deprecated jade@1.11.0: Jade has been renamed to pug, please install the latest version of pug instead of jade
+npm WARN deprecated transformers@2.1.0: Deprecated, use jstransformer
+npm WARN deprecated constantinople@3.0.2: Please update to at least constantinople 3.1.1
+npm WARN first_project@1.0.0 No repository field.
+
++ jade@1.11.0
+added 47 packages from 105 contributors and audited 97 packages in 13.626s
+found 4 vulnerabilities (3 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm audit fix
+npm WARN first_project@1.0.0 No repository field.
+
+up to date in 1.63s
+fixed 0 of 4 vulnerabilities in 97 scanned packages
+  4 vulnerabilities required manual review and could not be updated
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm audit
+
+                       === npm audit security report ===
+
+
+                                 Manual Review
+             Some vulnerabilities require your attention to resolve
+
+          Visit https://go.npm.me/audit-guide for additional guidance
+
+
+  Low             Incorrect Handling of Non-Boolean Comparisons During
+                  Minification
+
+  Package         uglify-js
+
+  Patched in      >= 2.4.24
+
+  Dependency of   jade
+
+  Path            jade > transformers > uglify-js
+
+  More info       https://npmjs.com/advisories/39
+
+
+  Low             Regular Expression Denial of Service
+
+  Package         uglify-js
+
+  Patched in      >=2.6.0
+
+  Dependency of   jade
+
+  Path            jade > transformers > uglify-js
+
+  More info       https://npmjs.com/advisories/48
+
+
+  Critical        Sandbox Bypass Leading to Arbitrary Code Execution
+
+  Package         constantinople
+
+  Patched in      >=3.1.1
+
+  Dependency of   jade
+
+  Path            jade > constantinople
+
+  More info       https://npmjs.com/advisories/568
+
+
+  Low             Regular Expression Denial of Service
+
+  Package         clean-css
+
+  Patched in      >=4.1.11
+
+  Dependency of   jade
+
+  Path            jade > clean-css
+
+  More info       https://npmjs.com/advisories/785
+
+found 4 vulnerabilities (3 low, 1 critical) in 97 scanned packages
+  4 vulnerabilities require manual review. See the full report for details.
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm audit fix
+npm WARN first_project@1.0.0 No repository field.
+
+up to date in 1.605s
+fixed 0 of 4 vulnerabilities in 97 scanned packages
+  4 vulnerabilities required manual review and could not be updated
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm install jade --save
+npm WARN deprecated jade@1.11.0: Jade has been renamed to pug, please install the latest version of pug instead of jade
+npm WARN deprecated transformers@2.1.0: Deprecated, use jstransformer
+npm WARN deprecated constantinople@3.0.2: Please update to at least constantinople 3.1.1
+npm WARN first_project@1.0.0 No repository field.
+
++ jade@1.11.0
+updated 1 package and audited 97 packages in 5.087s
+found 4 vulnerabilities (3 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm install nano --save
+npm WARN deprecated request@2.88.2: request has been deprecated, see https://github.com/request/request/issues/3142
+npm WARN deprecated har-validator@5.1.5: this library is no longer supportednpm WARN first_project@1.0.0 No repository field.
+
++ nano@8.2.2
+added 56 packages from 123 contributors and audited 153 packages in 16.706s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 4 vulnerabilities (3 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm fund
+first_project@1.0.0
+`-- https://github.com/sponsors/epoberezkin
+  `-- ajv@6.12.5
+
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm audit fix
+npm WARN first_project@1.0.0 No repository field.
+
+up to date in 2.354s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+fixed 0 of 4 vulnerabilities in 153 scanned packages
+  4 vulnerabilities required manual review and could not be updated
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm install body-parser --save
+npm WARN first_project@1.0.0 No repository field.
+
++ body-parser@1.19.0
+updated 1 package and audited 154 packages in 4.262s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 4 vulnerabilities (3 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm fund
+first_project@1.0.0
+`-- https://github.com/sponsors/epoberezkin
+  `-- ajv@6.12.5
+
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm audit fix
+npm WARN first_project@1.0.0 No repository field.
+
+up to date in 2.295s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+fixed 0 of 4 vulnerabilities in 153 scanned packages
+  4 vulnerabilities required manual review and could not be updated
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm install errorhandler --save
+npm WARN first_project@1.0.0 No repository field.
+
++ errorhandler@1.5.1
+added 1 package from 2 contributors and audited 154 packages in 3.96s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 4 vulnerabilities (3 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm install url --save
+npm WARN first_project@1.0.0 No repository field.
+
++ url@0.11.0
+added 3 packages from 3 contributors and audited 157 packages in 4.314s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 4 vulnerabilities (3 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm install serve-favicon --save
+npm WARN first_project@1.0.0 No repository field.
+
++ serve-favicon@2.5.0
+added 3 packages from 2 contributors and audited 160 packages in 4.018s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 4 vulnerabilities (3 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm install logger --save
+npm WARN first_project@1.0.0 No repository field.
+
++ logger@0.0.1
+added 1 package from 1 contributor and audited 161 packages in 4.925s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 4 vulnerabilities (3 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm install json --save
+npm WARN first_project@1.0.0 No repository field.
+
++ json@10.0.0
+added 1 package from 1 contributor and audited 162 packages in 5.436s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 4 vulnerabilities (3 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm install express-session --save
+npm WARN first_project@1.0.0 No repository field.
+
++ express-session@1.17.1
+added 6 packages from 5 contributors and audited 168 packages in 5.313s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 4 vulnerabilities (3 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm install
+npm WARN first_project@1.0.0 No repository field.
+
+audited 168 packages in 3.642s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 4 vulnerabilities (3 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>npm install method-override --save
+npm WARN first_project@1.0.0 No repository field.
+
++ method-override@3.0.0
+added 2 packages from 5 contributors and audited 170 packages in 6.162s
+
+1 package is looking for funding
+  run `npm fund` for details
+
+found 4 vulnerabilities (3 low, 1 critical)
+  run `npm audit fix` to fix them, or `npm audit` for details
+
+C:\xampp\htdocs\Web-Development\Node.js\Example_Project>
