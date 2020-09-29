@@ -1,3 +1,4 @@
+// Importing all dependencies
 var express = require('express');
 var routes = require('./routes');
 var http = require('http');
@@ -13,17 +14,21 @@ var nano = require('nano')('http://localhost:5984');// getting connected to couc
 var db = nano.use('address'); // for working with couchdb, we nano and specify/pass the name of the database as the parameter
 var app = express; // creating an app using express framework
 
+// Setting up the Environment
 app.set('port',process.env.PORT || 3000); // we specify the port to run the application
 app.set('views',path.join(__dirname,'views')); // we specify the views folder
 app.set('view engine','jade'); // we specify the view engine
 
+// Specifying all the used modules
 app.use(bodyParser.json()); // we import this module for parsing
 app.use(bodyParser.urlencoded()); // for passing the data in our urls
 app.use(methodOverride());
 app.use(express.static(path.join(__dirname,'public')));
 
+// Seleting Root
 app.get('/',routes.index);
 
+// Creating all the functions
 app.post('/createdb',function(req,res){
     nano.db.create(req.body.dbname,function(err){
         if(err){
