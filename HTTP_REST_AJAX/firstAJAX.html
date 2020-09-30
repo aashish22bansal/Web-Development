@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>First AJAX Page</title>
+        <script>
+            function loadXMLDoc(){
+                var xmlhttp;
+                if(window.XMLHttpRequest){
+                    xmlhttp = new XMLHttpRequest();
+                }
+                xmlhttp.onreadystatechange = function(){
+                    if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
+                        document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
+                    }
+                }
+                xmlhttp.open("GET","AJAX_TextFile.txt",true);
+                xmlhttp.send();
+            }
+        </script>
+    </head>
+    <body>
+        <div id="myDiv">
+            <h2>Let AJAX change this text</h2>
+        </div>
+        <button type="button" onclick="loadXMLDoc()">Change Content</button>
+    </body>
+</html>
