@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+	<head>
+		<meta charset="UTF-8">
+		<title>ng-repeat</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body>
+		<div ng-init="skills=[{name:'PHP',extension:'.php'},{name:'HTML',extension:'.html'},{name:'Java',extension:'.java'}]"><!--We have an array object inside this initialization.-->
+			<p ng-repeat="skill in skills"> <!--This is like a for loop in programming languages.-->
+				Name: {{skill.name}}<br>
+				Extension: {{skill.extension}}<br>
+			</p>
+		</div>
+	</body>
+</html>

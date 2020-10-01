@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Introduction To Model-View-Controller (MVC)</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body ng-app="">
+		<!--
+			
+			-->
+		Your Name: <input type="text" ng-model="name"><br>
+		Price: <input type="text" ng-model="price"><br>
+		Welcome {{name|uppercase}}<br>
+		Welcome {{name|lowercase}}<br>
+		{{price|currency}}<br>
+		{{price|currency:"Rs. "}}<br>
+		{{price|currency:"Rs. ":0}}<br>
+		{{price|currency:"Rs. ":5}}<br>
+		{{price|number:"Rs. ":5}}<br>
+		<script></script>
+	</body>
+</html>

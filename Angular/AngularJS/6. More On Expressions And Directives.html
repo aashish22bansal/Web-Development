@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+	<head>
+		<meta charset="UTF-8">
+		<title>More On Expressions And Directives</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body>
+		<!-- ng-init allows you to store data inside the HTML file itself so that you can use it later.-->
+		<div ng-init="Language='AngularJS'">
+			Your preffered language: <input type="text" ng-model="Language"><br>{{Language}}
+		</div>
+	</body>
+</html>

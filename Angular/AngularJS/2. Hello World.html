@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+<!-- ng-app gives a base code to angular for the point from where to start. This attribute is just like the main() function in C++.-->
+	<head>
+		<meta charset="UTF-8">
+		<title>Basic 'Hello World!' App</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body>
+		<input type="text" ng-model="name">
+		<div>Hello {{name}}</div><!--This is how the expressions are evaluated in AngularJS.-->
+	</body>
+</html>

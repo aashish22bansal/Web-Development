@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+	<head>
+		<meta charset="UTF-8">
+		<title>3. ng-model and ng-bind directives</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	</head>
+	<body>
+		<input type="text" ng-model="name">
+		<!-- ng-model="" tends to work only with all the tags used to take input from the user.-->
+		<div ng-bind="name"></div>
+		<!-- ng-bind="" is used only when we want to display something. This is another way to writing dynammically but without using the expression.-->
+	</body>
+</html>
