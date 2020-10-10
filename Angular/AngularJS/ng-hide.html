@@ -1,0 +1,24 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+		<title>ng-hide Directive</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script> 
+	</head> 
+	<body> 
+		<div ng-app="app" ng-controller="geek" style="text-align:center"> 
+			<h1 style="color:green">GeeksforGeeks</h1> 
+			<h2>ng-hide Directive</h2> 
+			<input id="chbhide" type="checkbox" ng-model="hide" /> 
+			<label for="chbhide">Hide Paragraph</label> 
+			<p ng-hide="hide" style="background: green; color: white;font-size: 14px; width:35%; padding: 10px;"> 
+				Hide this paragraph using ng-hide 
+			</p> 
+		</div> 
+		<script> 
+			var myapp = angular.module("app", []); 
+				myapp.controller("geek", function ($scope) {
+					$scope.hide = false;
+			}); 
+		</script> 
+	</body> 
+</html>
