@@ -1,0 +1,188 @@
+Your environment has been set up for using Node.js 12.18.4 (x64) and npm.
+
+C:\Users\aashi>cd C:\xampp\htdocs\Web-Development\MongoDB Manipulation Using NodeJS
+
+C:\xampp\htdocs\Web-Development\MongoDB Manipulation Using NodeJS>node Node_MongoDB.js
+[Function: MongoClient] {
+  connect: [Function] {
+    MongoError: [class MongoError extends Error],
+    MongoNetworkError: [class MongoNetworkError extends MongoError],
+    MongoTimeoutError: [class MongoTimeoutError extends MongoError],
+    MongoServerSelectionError: [class MongoServerSelectionError extends MongoTimeoutError],
+    MongoParseError: [class MongoParseError extends MongoError],
+    MongoWriteConcernError: [class MongoWriteConcernError extends MongoError],
+    MongoBulkWriteError: [class BulkWriteError extends MongoError],
+    BulkWriteError: [class BulkWriteError extends MongoError],
+    Admin: [Function: Admin],
+    MongoClient: [Circular],
+    Db: [Function: Db] {
+      SYSTEM_NAMESPACE_COLLECTION: 'system.namespaces',
+      SYSTEM_INDEX_COLLECTION: 'system.indexes',
+      SYSTEM_PROFILE_COLLECTION: 'system.profile',
+      SYSTEM_USER_COLLECTION: 'system.users',
+      SYSTEM_COMMAND_COLLECTION: '$cmd',
+      SYSTEM_JS_COLLECTION: 'system.js'
+    },
+    Collection: [Function: Collection],
+    Server: [class Server extends TopologyBase],
+    ReplSet: [class ReplSet extends TopologyBase],
+    Mongos: [class Mongos extends TopologyBase],
+    ReadPreference: [Function: ReadPreference] {
+      PRIMARY: 'primary',
+      PRIMARY_PREFERRED: 'primaryPreferred',
+      SECONDARY: 'secondary',
+      SECONDARY_PREFERRED: 'secondaryPreferred',
+      NEAREST: 'nearest',
+      fromOptions: [Function],
+      resolve: [Function],
+      translate: [Function],
+      isValid: [Function],
+      primary: [ReadPreference],
+      primaryPreferred: [ReadPreference],
+      secondary: [ReadPreference],
+      secondaryPreferred: [ReadPreference],
+      nearest: [ReadPreference]
+    },
+    GridStore: [Function: GridStore] {
+      DEFAULT_ROOT_COLLECTION: 'fs',
+      DEFAULT_CONTENT_TYPE: 'binary/octet-stream',
+      IO_SEEK_SET: 0,
+      IO_SEEK_CUR: 1,
+      IO_SEEK_END: 2,
+      exist: [Function],
+      list: [Function],
+      read: [Function],
+      readlines: [Function],
+      unlink: [Function]
+    },
+    Chunk: [Function: Chunk] { DEFAULT_CHUNK_SIZE: 261120 },
+    Logger: [Function: Logger] {
+      reset: [Function],
+      currentLogger: [Function],
+      setCurrentLogger: [Function],
+      filter: [Function],
+      setLevel: [Function]
+    },
+    AggregationCursor: [class AggregationCursor extends Cursor],
+    CommandCursor: [class CommandCursor extends Cursor],
+    Cursor: [class Cursor extends CoreCursor],
+    GridFSBucket: [Function: GridFSBucket],
+    CoreServer: [Function: Server] {
+      enableServerAccounting: [Function],
+      disableServerAccounting: [Function],
+      servers: [Function]
+    },
+    CoreConnection: [class Connection extends EventEmitter],
+    Binary: [Function: Binary] {
+      BUFFER_SIZE: 256,
+      SUBTYPE_DEFAULT: 0,
+      SUBTYPE_FUNCTION: 1,
+      SUBTYPE_BYTE_ARRAY: 2,
+      SUBTYPE_UUID_OLD: 3,
+      SUBTYPE_UUID: 4,
+      SUBTYPE_MD5: 5,
+      SUBTYPE_USER_DEFINED: 128,
+      Binary: [Circular]
+    },
+    Code: [Function: Code] { Code: [Circular] },
+    Map: [Function: Map] { Map: [Circular] },
+    DBRef: [Function: DBRef] { DBRef: [Circular] },
+    Double: [Function: Double] { Double: [Circular] },
+    Int32: [Function: Int32] { Int32: [Circular] },
+    Long: [Function: Long] {
+      fromInt: [Function],
+      fromNumber: [Function],
+      fromBits: [Function],
+      fromString: [Function],
+      INT_CACHE_: [Object],
+      TWO_PWR_16_DBL_: 65536,
+      TWO_PWR_24_DBL_: 16777216,
+      TWO_PWR_32_DBL_: 4294967296,
+      TWO_PWR_31_DBL_: 2147483648,
+      TWO_PWR_48_DBL_: 281474976710656,
+      TWO_PWR_64_DBL_: 18446744073709552000,
+      TWO_PWR_63_DBL_: 9223372036854776000,
+      ZERO: [Long],
+      ONE: [Long],
+      NEG_ONE: [Long],
+      MAX_VALUE: [Long],
+      MIN_VALUE: [Long],
+      TWO_PWR_24_: [Long],
+      Long: [Circular]
+    },
+    MinKey: [Function: MinKey] { MinKey: [Circular] },
+    MaxKey: [Function: MaxKey] { MaxKey: [Circular] },
+    ObjectID: [Function: ObjectID] {
+      index: 5281615,
+      createPk: [Function: createPk],
+      createFromTime: [Function: createFromTime],
+      createFromHexString: [Function: createFromHexString],
+      isValid: [Function: isValid],
+      ObjectID: [Circular],
+      ObjectId: [Circular]
+    },
+    ObjectId: [Function: ObjectID] {
+      index: 5281615,
+      createPk: [Function: createPk],
+      createFromTime: [Function: createFromTime],
+      createFromHexString: [Function: createFromHexString],
+      isValid: [Function: isValid],
+      ObjectID: [Circular],
+      ObjectId: [Circular]
+    },
+    Symbol: [Function: Symbol] { Symbol: [Circular] },
+    Timestamp: [Function: Timestamp] {
+      fromInt: [Function],
+      fromNumber: [Function],
+      fromBits: [Function],
+      fromString: [Function],
+      INT_CACHE_: [Object],
+      TWO_PWR_16_DBL_: 65536,
+      TWO_PWR_24_DBL_: 16777216,
+      TWO_PWR_32_DBL_: 4294967296,
+      TWO_PWR_31_DBL_: 2147483648,
+      TWO_PWR_48_DBL_: 281474976710656,
+      TWO_PWR_64_DBL_: 18446744073709552000,
+      TWO_PWR_63_DBL_: 9223372036854776000,
+      ZERO: [Timestamp],
+      ONE: [Timestamp],
+      NEG_ONE: [Timestamp],
+      MAX_VALUE: [Timestamp],
+      MIN_VALUE: [Timestamp],
+      TWO_PWR_24_: [Timestamp],
+      Timestamp: [Circular]
+    },
+    BSONRegExp: [Function: BSONRegExp] { BSONRegExp: [Circular] },
+    Decimal128: [Function: Decimal128] {
+      fromString: [Function],
+      Decimal128: [Circular]
+    },
+    connect: [Circular],
+    instrument: [Function]
+  }
+}
+(node:2568) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Database created!
+
+C:\xampp\htdocs\Web-Development\MongoDB Manipulation Using NodeJS>node code.js
+C:\xampp\htdocs\Web-Development\MongoDB Manipulation Using NodeJS\node_modules\mongodb\lib\utils.js:668
+          throw error;
+          ^
+
+MongoParseError: Invalid connection string
+    at parseConnectionString (C:\xampp\htdocs\Web-Development\MongoDB Manipulation Using NodeJS\node_modules\[4mmongodb[24m\lib\core\uri_parser.js:565:21)
+    at connect (C:\xampp\htdocs\Web-Development\MongoDB Manipulation Using NodeJS\node_modules\[4mmongodb[24m\lib\operations\connect.js:282:3)
+    at C:\xampp\htdocs\Web-Development\MongoDB Manipulation Using NodeJS\node_modules\[4mmongodb[24m\lib\mongo_client.js:223:5
+    at maybePromise (C:\xampp\htdocs\Web-Development\MongoDB Manipulation Using NodeJS\node_modules\[4mmongodb[24m\lib\utils.js:662:3)
+    at MongoClient.connect (C:\xampp\htdocs\Web-Development\MongoDB Manipulation Using NodeJS\node_modules\[4mmongodb[24m\lib\mongo_client.js:219:10)
+    at Function.MongoClient.connect (C:\xampp\htdocs\Web-Development\MongoDB Manipulation Using NodeJS\node_modules\[4mmongodb[24m\lib\mongo_client.js:442:22)
+    at Object.<anonymous> (C:\xampp\htdocs\Web-Development\MongoDB Manipulation Using NodeJS\code.js:3:13)
+[90m    at Module._compile (internal/modules/cjs/loader.js:1137:30)[39m
+[90m    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)[39m
+[90m    at Module.load (internal/modules/cjs/loader.js:985:32)[39m
+
+C:\xampp\htdocs\Web-Development\MongoDB Manipulation Using NodeJS>node code.js
+(node:10812) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+Collection created!
+
+C:\xampp\htdocs\Web-Development\MongoDB Manipulation Using NodeJS>
