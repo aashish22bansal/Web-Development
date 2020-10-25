@@ -1,0 +1,1 @@
+console.log("This is used to display something in the console window.");

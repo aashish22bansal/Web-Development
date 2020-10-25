@@ -1,0 +1,19 @@
+{
+  "name": "web-development",
+  "version": "1.0.0",
+  "description": "This repository consists of some basic programs to learn Web Development.",
+  "main": "Node.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aashish22bansal/Web-Development.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aashish22bansal/Web-Development/issues"
+  },
+  "homepage": "https://github.com/aashish22bansal/Web-Development#readme"
+}
