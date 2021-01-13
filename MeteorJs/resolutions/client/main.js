@@ -3,7 +3,8 @@ import { ReactiveVar } from 'meteor/reactive-var';
 import { Mongo } from 'meteor/mongo';
 import { Tasks } from '..imports//api/tasks.js';
 
-import './main.html';
+import '../main.html';
+import { Resolutions } from '../imports/api/tasks';
 /*
 Template.hello.onCreated(function helloOnCreated() {
     // counter starts at 0
@@ -28,22 +29,28 @@ Resolutions = new Mongo.Collection('resolutions');
 if(Meteor.isClient){
     Template.body.helpers({
         resolutions: function(){
-            return Resolutions.find();
+            reso = Resolutions.find();
+            console.log('The obtained resolutions are: ');
+            console.log(reso);
+            return reso;
         }
     });
     Template.body.events({
         'submit .new-resolution': function(event){
             var title = event.target.title.value;
-
+            console.log('Checking the events function');
             Resolutions.insert({
                 title: title,
                 createdAt: new Date()
             });
             event.target.title.value = "";
-
+            console.log('Checking the events function');
             return false;
         }
-    });
+    });/*
+    Tracker.autorun(function () {
+        console.log(newColl.find().fetch());
+      });*/
 }
 
 if(Metero.isServer){
