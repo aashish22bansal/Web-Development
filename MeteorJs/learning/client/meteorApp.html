@@ -1,0 +1,13 @@
+<head>
+    <title>meteorApp</title>
+</head>
+<body>
+    <div>
+        {{#each paragraphs}}
+            {{> paragraph}}
+        {{/each}}
+    </div>
+</body>
+<template name="paragraph">
+    <p>{{text}}</p>
+</template>
