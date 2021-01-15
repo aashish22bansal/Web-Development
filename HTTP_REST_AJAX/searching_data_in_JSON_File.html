@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AJAX with JSON</title>
+        <script type="text/javascript">
+            function loadJSON(){
+                var choose_value = document.getElementById("choose").value;
+                console.log(choose_value);
+                if(choose_value!=null){
+                    var data_file = "ajax_info.json";
+                    console.log(data_file.value);
+                    try{
+                        http_request = new XMLHttpRequest();
+                    }
+                    catch(e){
+                        try{
+                            http_request = new ActiveXObject("Msxml2.XMLHTTP");
+                        }
+                        catch(e){
+                            try{
+                                http_request = new ActiveXObject("Microsoft.XMLHTTP");
+                            }
+                            catch(e){
+                                alert("Your browser broke!");
+                                //return false;
+                            }
+                        }
+                    }
+                    console.log(http_request);
+                    http_request.onreadystatechange = function(){
+                        if(this.readyState==4){
+                            // JavaScript function JSON.parse to parse JSON data
+                            var jsonObj = JSON.parse(http_request.responseText);
+                            var required = {};
+                            var x = {};
+                            // jsonObj variable can be accessed
+                            for(x in jsonObj){
+                                if(x["Product_ID"].value == document.getElementById("choose").value){
+                                    required = x;
+                                    document.getElementById("pid").innerHTML=x[document.getElementById("choose").value].id;
+                                    document.getElementById("name").innerHTML=x[document.getElementById("choose").value].name;
+                                    document.getElementById("price").innerHTML=x[document.getElementById("choose").value].price;
+                                    document.getElementById("stock").innerHTML=x[document.getElementById("choose").value].stock;
+                                    document.getElementById("type").innerHTML=x[document.getElementById("choose").value].type;
+                                }
+                            }
+                        }
+                    }
+                    console.log(http_request.open("GET",data_file,true));
+                    console.log(http_request.send());
+                }
+                else{
+                    alert("No value passed to function!");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <select id="choose">
+            <option value="A">A</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="D">D</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+        </select>
+        <button onclick="loadJSON()">Availability</button>
+        <br>
+        Product ID:<span id="pid" value="1"></span><br>
+        Name:<span id="name" value="0"></span><br>
+        Price:<span id="price" value="2"></span><br>
+        Stock:<span id="stock" value="3"></span><br>
+        Type:<span id="type" value="4"></span><br>
+    </body>
+</html>
