@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AngularJs Form</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    </head>
+    <body ng-app="app" ng-controller="confirmCtrl">
+        <form name="frm">
+            <div>
+                <p>Username: <br>
+                    <input type="text" name="user" ng-model="user" required />
+                    <span style="color: red;" ng-show="frm.user.$dirty && frm.user.$invalid">
+                        <span ng-show="frm.user.$error.required">Username is required.</span>
+                    </span>
+                </p>
+            </div>
+            <div>
+                <p>Email: <br>
+                    <input type="email" name="email" ng-model="email" required />
+                    <span style="color: red;" ng-show="frm.email.$dirty && frm.email.$invalid">
+                        <span ng-show="frm.email.$error.required">Email is required.</span>
+                        <span ng-show="frm.email.$error.email">Email is Invalid.</span>
+                    </span>
+                </p>
+            </div>
+            <div>
+                <lable>Password: </lable><br>
+                <input type="password" name="Epassword" ng-model="Epassword" required class="form-control" />
+            </div>
+            <div>
+                <label>Confirm Password: </label><br>
+                <input type="password" name="ECpassword" ng-model="ECpassword" required compare-to="Epassword" class="form-control" />
+                <span class="error" ng-show="frm.ECpassword.$error.compareTo">Passwords don't match.</span>
+            </div>
+            <div>
+                <label for="inputPhone" class="col-sm-3 control-label">Phone :</label>
+                <div class="col-sm-9">
+                    <input type="text" 
+                        class="form-control" 
+                        ng-minlength="10" 
+                        ng-maxlength="10"  
+                        id="inputPhone" 
+                        name="phone" 
+                        placeholder="Phone" 
+                        ng-model="user.phone"
+                        ng-required="true">
+                    <span class="help-block" 
+                        ng-show="registration.phone.$error.required || 
+                                registration.phone.$error.number">
+                                Valid phone number is required
+                    </span>
+                    <span class="help-block" 
+                        ng-show="((registration.phone.$error.minlength ||
+                                registration.phone.$error.maxlength) && 
+                                registration.phone.$dirty)">
+                                phone number should be 10 digits
+                    </span>
+                    <!--label>Mobile No.: </label><br>
+                    <input type="text" name="mobile" ng-model="mobile" required mobile-directive-->
+                </div>
+            </div>
+        </form>
+        <script type="text/javascript">
+            var app = angular.module("app",[]);
+            app.controller("confirmCtrl",function($scope){
+                $scope.user = {
+                    password: "",
+                    confirmPassword: ""
+                };
+            });
+            app.directive("compareTo",function(){
+                return {
+                    require: "ngModel",
+                    scope: 
+                    {
+                        confirmPassword: "=compareTo"
+                    },
+                    link: function(scope, element, attribute, modelVal)
+                    {
+                        modelVal.$validators.compareTo = function(val)
+                        {
+                            return val == scope.confirmPassword;
+                        };
+                        scope.$watch("confirmPassword",function(){
+                            modelVal.$validate();
+                        });
+                    }
+                }
+            });
+        </script>
+    </body>
+</html>

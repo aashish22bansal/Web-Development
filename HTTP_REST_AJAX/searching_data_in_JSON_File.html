@@ -90,7 +90,13 @@
                         if(xmlhttp.readyState == 4 && xmlhttp.status == 200){
                             //document.getElementById("myDiv").innerHTML = xmlhttp.responseText;
                             var jsonObj = JSON.parse(xmlhttp.responseText);
-                            console.log("jsonObj: "+jsonObj.value);
+                            console.log("jsonObj: "+jsonObj);
+                            document.getElementById("pid").innerHTML=x[document.getElementById("choose").value].id;
+                            document.getElementById("name").innerHTML=x[document.getElementById("choose").value].name;
+                            document.getElementById("price").innerHTML=x[document.getElementById("choose").value].price;
+                            document.getElementById("stock").innerHTML=x[document.getElementById("choose").value].stock;
+                            document.getElementById("type").innerHTML=x[document.getElementById("choose").value].type;
+                            /*
                             var required = {};
                             var x = {};
                             // jsonObj variable can be accessed
@@ -114,8 +120,8 @@
                                     document.getElementById("price").innerHTML=x[document.getElementById("choose").value].price;
                                     document.getElementById("stock").innerHTML=x[document.getElementById("choose").value].stock;
                                     document.getElementById("type").innerHTML=x[document.getElementById("choose").value].type;
-                                }*/
-                            }
+                                //}
+                            }*/
                         }
                     }
                     console.log(xmlhttp.open("GET","ajax_info.txt",true));
